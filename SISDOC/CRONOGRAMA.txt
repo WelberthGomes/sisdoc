@@ -1,0 +1,42 @@
+Cronograma
+
+26/01/2013 (Sabado)
+
+	Houve o levantamento de dados.		
+
+27/01/2013 (Domingo)
+	
+	Realizei a criação do banco de dados de acordo com o dicionario de dados passado pela D'arrochela seguindo as formas normais.
+	Foi criado a classe de conexao e realizado teste na mesma. Logo após foi criado todas classe necessarias para iniciar a codificação, exceto as
+	classes de persistencias que só iniciarão no processo de desenvolvimento.
+	
+28/01/2013 (Segunda)
+	
+	Foi criado a classe de persistencia de usuário logo apos foi implementado o layout, apesar de ser simples, levou algum tempo até terminar..
+	depois criei o modulo de listagem, cadastro, alteração e exclusão de usuario (Utilizando Jquery para validação de campos, nos formularios). 
+	Em seguida, foi feito a parte de autenticação de usuario e restrição de acesso.
+	
+29/01/2013 (Terça)
+
+	Foi realizado o modulo de alteração de senha para todos usuarios.
+	Foi implementado o modulo de cadastro de documentos associando com o tipo de documento e validando com jquery.
+	Foi dado inicio também a implementação da busca de documentos filtrados por login e numero do documento, utilizando ajax.
+	
+30/01/2013 (Quarta)
+
+	Pesquisa da algumas imagens para inserir na aplicação (Editar, Excluir)
+	Mudança em parte do layout..
+	Alteração na parte de pesquisa : Foi desabilitado a função da tecla enter para pesquisa, é preciso clicar no botão 'ir' para pesquisar.
+	Mudança no script de consulta para caso não retorne nenhum valor, seja exibida uma mensagem!
+	Foi criado o modulo para exclusão de documento com restrição para gerente. (Esta parte foi demorada devido a consulta ser realizada atraves 
+	de ajax)
+
+31/01/2013 (Quinta)
+
+	Criado o modulo de tipo de documento (Listagem e Cadastro).
+	Realizados testes de integridade referencial nas tabelas.
+	Alteração do layout para que a pagina selecionada fique de outra cor no menu
+	Foi inserido restrições em todas a páginas inclusive para impedir o acesso via URL.
+	Feito pesquisa encontrei um meio de capturar o 'name' do imput da pagina de consulta de documentos para que na hora em que for realizar exclusão do documento, seja exibida uma mensagem de confirmação com o numero do documento.
+	Validado se tem algum documento cadastrado, senão é exibido uma mensagem informado que ainda não há documento cadastrado.
+	Projeto foi revisado, organizado e encaminhado para o email anchietatt@hotmail.com

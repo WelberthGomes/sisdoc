@@ -1,0 +1,56 @@
+PROJETO SISDOC
+
+Foi concluído o sistema de acordo com o que conversamos.
+
+Este projeto está dividio em 3 diretorios
+
+1) BANCO
+	Aqui encontra-se:
+		script de criação do banco
+		script de carga do banco
+		imagens dos testes realizados (Integridade referencial, ou seja, não é possível excluir 'o pai sem antes excluir as filhas' relação de PK com FK)
+
+2) 	MER
+	Aqui encontra-se:
+		Arquivo MER.mwb.bak para ser aberto no MySQL Workbentch
+		MER no formato PNG
+
+3)	SISTEMA
+	Aqui encontra-se:
+		Diretório sisdoc que é o sistema em si.
+		
+Fora desses diretorios encontra-se:
+	Este arquivo LEIA-ME
+	e o arquivo CRONOGRAMA para que você tenha ciencia de algumas coisas que eu fiz de acordo com o tempo. (É bom ler ;D)
+
+
+O SISTEMA
+O sistema contem: 7 Diretórios e 43 Arquivos.
+
+PASSO - A - PASSO para rodar o sistema na sua máquina
+
+Certifique-se que esteja instalado o servidor, o mysql e o php.
+1º Abra o PHPMYADMIN na sua maquina e execute o script que está no arquivo "Script de Criacao do Banco" que se encontra dentro do diretorio BANCO.
+2º Agora execute o script que está no arquivo "Script de Carga" que se encontra dentro do diretorio BANCO.
+3º Copie o diretorio sisdoc que se encontra no diretorio SISTEMA, para dentro do seu servidor.
+
+OBS: Caso sua senha do mysql seja diferente da padrão você pode alterá-la na aplicação. O arquivo de conexão com o banco se encontra no diretorio(sisdoc/admin/model/Conexao.class.php)
+
+Caso não ocorra nenhum problema o sistema já deve esta funcionando normalmente. Você pode logar com o login que você carregou no script de carga que é: Login: anchieta Senha: anchieta (já está com perfil de gerente)
+
+OBSERVAÇÕES SOBRE O SISTEMA
+
+O script de carga carrega apenas carrega o necessário. Depois da aplicação funcionando você deve cadastrar os outros tipos de documento. No script de carga
+foi carregado apenas 3 (Autorização, Declaração e Notificação).
+
+A consulta de documento está ocorrendo por número de documento e pelo LOGIN. Ao passar o mouse por cima da caixa de pesquisa é exibido a mensagem.
+A exclusão de usuários está conforme conversamos, é exluido apenas da aplicação mudando o status do usuario para inativo, porém o usuario continua no banco.
+Mesmo se a professora pedir pra excluir diretamente no banco não dará certo devido ao relacionamento feito conforme imagem na pasta BANCO que ao tentar
+excluir um usuario ou um tipo de documento o banco não permitiu.
+
+Utilizei Jquery para validações de formularios e ajax para consulta o que tornou muito rapido e melhor.
+
+Agora é só testar testar testar!!!
+Crie outros usuários com diferentes perfis, teste nível de acesso, teste restrições. Para que não ocorra nenhuma falha no dia da apresentação de vocês!
+
+Acho que é só isso, boa sorte! Qualquer duvida ou sugestão me liga! Abraços
